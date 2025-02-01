@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo1.png" type="image/x-icon">
+    <title>ExamiN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h2>Sorry, <span id="name"></span> Time Out!</h2>
+        <img src="Urgent.gif" id="timeimg" alt="timeout">
+    </div>
+    <script>
+        const firstName= localStorage.getItem("userName");
+        const lastName= localStorage.getItem("lastName");
+        document.getElementById("name").innerHTML= firstName + " " + lastName;
+        setTimeout(function(){
+        window.location.href="/user home/userhome.html"
+        },8000);
+    </script>
+</body>
+</html>

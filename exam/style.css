@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #5f0033;
+    color: #333;
+    /* text-align: center; */
+}
+
+/* .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0061c9;
+    width: 100%;
+    box-sizing: border-box;
+    
+    }
+    /* .logo img {
+        width: 100%;
+        max-width: 200px;
+    } 
+    .logo {
+       color: white;
+       font-size: 24px;
+       font-weight: bold;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .nav-links li {
+        margin: 0 15px;
+        padding: 9px 0px;
+    
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    
+    }
+    .nav-links a:hover {
+        text-decoration: underline;
+    } */
+    .container{
+        margin: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+}
+.quiz-app{
+    background-color: rgb(234, 211, 220);
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+.quiz-info{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.category{
+    flex: 1;
+    text-align: left;
+}
+.count{
+    flex: 1;
+    text-align: right;
+    justify-content: right;
+}
+.quiz-area{
+    background-color: white;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.answers-area{
+    background-color: white;
+    padding: 20px 0px 0 0;
+    margin-bottom: 10px;
+}
+
+.answers-area .answer{
+    padding: 20px;
+    border-top:1px solid #dfdfdf;
+}
+
+.answer input[type="radio"]:checked +label{
+    color: #9a0052;
+}
+.answer label{
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.button{
+    display: block;
+    text-align: center;
+    background-color: #5f0033;
+    color: #f0f0f0;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+}
+.prev , .next{
+    display: block;
+    text-align: center;
+    background-color:  #5f0033;
+    color: #f0f0f0;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+#flag{
+    display: block;
+    text-align: center;
+    background-color:  #5f0033;
+    color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 25px auto;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+ 
+}
+.button:hover , #flag:hover , .next:hover , .prev:hover{
+    background-color:#9a0052;
+    color: #ffff;
+}
+
+
+/* .bullets{
+    border:  1px solid #dfdfdf;
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 10px;
+} */
+
+/* .bullets .spans{
+    display: flex;
+    flex: 1;
+} */
+
+.spans span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #989898;
+    margin: 10px;
+
+}
+/* 
+.spans span.on{
+    background-color: #0061c9;
+} */
+.btns{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.two{
+    width: 20%;
+    margin-right: 0px ;
+} 
+
+.number{
+    margin-left: 320px;
+}
+
+
+
+@media (max-width:800px) {
+    *{
+            font-size: 14px;
+        }
+    .container{
+            margin: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    }
+    .quiz-app{
+            width: 95%;
+            margin-top: 10px;
+            margin-left: 0px;
+    }
+    .quiz-info{
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .answer{
+        padding: 20px;
+        font-size: 14px;
+    }
+    .count {
+    margin-top: 0;
+    font-size: 12px;
+
+    }
+    .number{ 
+        margin-left:75px;
+        font-size: 12px;
+
+    } 
+    .countdown {
+        font-size: 12px;
+
+    }
+    .submit-button{
+        font-size: 13px;
+    }
+    .button{
+    font-size: 11px ;
+    }
+    .category{
+        font-size: 12px;
+    }
+    .fa-regular {
+        font-size: 12px;
+    }
+    .fa-flag{
+        font-size: 10px;
+    }
+    .prev , .next{
+        font-size: 10px;
+        width:40px;
+        height: 30px;
+    }
+    .answer label{
+        font-size: 12px;
+    }
+    }
+@media (max-width:415px) {
+        *{
+                font-size: 14px;
+            }
+        .container{
+                margin: 30px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+        }
+        .quiz-app{
+                width: 95%;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                margin-left: 0px;
+        }
+        .quiz-info{
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            font-size: 12px;
+        }
+        .answer{
+            padding: 20px;
+            font-size: 14px;
+        }
+        .count {
+        margin-top: 0;
+        font-size: 12px;
+    
+        }
+        .number{ 
+            margin-left:50px;
+            font-size: 12px;
+    
+        } 
+        .countdown {
+            font-size: 12px;
+    
+        }
+        .submit-button{
+            font-size: 13px;
+        }
+        .button{
+        font-size: 11px ;
+        }
+        .category{
+            font-size: 12px;
+        }
+        .fa-regular {
+            font-size: 12px;
+        }
+        .fa-flag{
+            font-size: 10px;
+        }
+        .prev , .next{
+            font-size: 10px;
+            width:40px;
+            height: 30px;
+        }
+        .answer label{
+            font-size: 12px;
+        }
+        
+        }

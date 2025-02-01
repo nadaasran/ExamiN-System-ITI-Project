@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "title": "What does HTML stand for?",
+      "answers": [
+        "Hyper Text Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "right_answer": "Hyper Text Markup Language"
+    },
+    {
+      "id": 2,
+      "title": "Which programming language is used to style web pages?",
+      "answers": [
+        "JavaScript",
+        "CSS",
+        "Python"
+      ],
+      "right_answer": "CSS"
+    },
+    {
+      "id": 3,
+      "title": "What is the primary function of JavaScript in web development?",
+      "answers": [
+        "Styling web pages",
+        "Adding interactivity",
+        "Defining database structures"
+      ],
+      "right_answer": "Adding interactivity"
+    },
+    {
+      "id": 4,
+      "title": "Which HTML tag is used to create a hyperlink?",
+      "answers": [
+        "a",
+        "link",
+        "href"
+      ],
+      "right_answer": "a"
+    },
+    {
+      "id": 5,
+      "title": "Which of the following is a JavaScript framework?",
+      "answers": [
+        "Django",
+        "Angular",
+        "Laravel"
+      ],
+      "right_answer": "Angular"
+    },
+    {
+      "id": 6,
+      "title": "What does CSS stand for?",
+      "answers": [
+        "Cascading Style Sheets",
+        "Computer Style System",
+        "Creative Styling Source"
+      ],
+      "right_answer": "Cascading Style Sheets"
+    },
+    {
+      "id": 7,
+      "title": "Which of the following is NOT a valid JavaScript data type?",
+      "answers": [
+        "Boolean",
+        "Float",
+        "String"
+      ],
+      "right_answer": "Float"
+    },
+    {
+      "id": 8,
+      "title": "What is the correct way to write a JavaScript array?",
+      "answers": [
+        "var colors = (red, blue, green);",
+        "var colors = ['red', 'blue', 'green'];",
+        "var colors = {red, blue, green};"
+      ],
+      "right_answer": "var colors = ['red', 'blue', 'green'];"
+    },
+    {
+      "id": 9,
+      "title": "Which of the following is used to declare a variable in JavaScript?",
+      "answers": [
+        "let",
+        "var",
+        "Both let and var"
+      ],
+      "right_answer": "Both let and var"
+    },
+    {
+      "id": 10,
+      "title": "What is the purpose of the 'alt' attribute in an img tag?",
+      "answers": [
+        "To style the image",
+        "To provide alternative text for screen readers",
+        "To define the image size"
+      ],
+      "right_answer": "To provide alternative text for screen readers"
+    },
+    {
+      "id": 11,
+      "title": "Which of the following HTTP methods is used to send data to a server?",
+      "answers": [
+        "GET",
+        "POST",
+        "DELETE"
+      ],
+      "right_answer": "POST"
+    },
+    {
+      "id": 12,
+      "title": "What is the default display property of a div element?",
+      "answers": [
+        "inline",
+        "block",
+        "flex"
+      ],
+      "right_answer": "block"
+    },
+    {
+      "id": 13,
+      "title": "Which of the following is a correct way to comment in JavaScript?",
+      "answers": [
+        "// This is a comment",
+        "!-- This is a comment --",
+        "' This is a comment"
+      ],
+      "right_answer": "// This is a comment"
+    },
+    {
+      "id": 14,
+      "title": "Which CSS property is used to change the background color of an element?",
+      "answers": [
+        "color",
+        "background-color",
+        "bgcolor"
+      ],
+      "right_answer": "background-color"
+    },
+    {
+      "id": 15,
+      "title": "Which JavaScript method is used to select an element by its ID?",
+      "answers": [
+        "document.querySelector()",
+        "document.getElementById()",
+        "document.getElementsByClass()"
+      ],
+      "right_answer": "document.getElementById()"
+    },
+    {
+      "id": 16,
+      "title": "Which of the following is NOT a valid CSS unit?",
+      "answers": [
+        "px",
+        "em",
+        "ptm"
+      ],
+      "right_answer": "ptm"
+    },
+    {
+      "id": 17,
+      "title": "What does the 'position: absolute;' CSS property do?",
+      "answers": [
+        "Positions an element relative to its parent",
+        "Positions an element relative to the viewport",
+        "Positions an element relative to its closest positioned ancestor"
+      ],
+      "right_answer": "Positions an element relative to its closest positioned ancestor"
+    },
+    {
+      "id": 18,
+      "title": "Which HTML5 element is used for embedding videos?",
+      "answers": [
+        "media",
+        "video",
+        "embed"
+      ],
+      "right_answer": "video"
+    },
+    {
+      "id": 19,
+      "title": "What is the purpose of the 'flexbox' layout in CSS?",
+      "answers": [
+        "To create grid-based layouts",
+        "To create flexible and responsive layouts",
+        "To add animations to a webpage"
+      ],
+      "right_answer": "To create flexible and responsive layouts"
+    },
+    {
+      "id": 20,
+      "title": "Which JavaScript function is used to parse JSON data?",
+      "answers": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.decode()"
+      ],
+      "right_answer": "JSON.parse()"
+    }
+  ]
+  

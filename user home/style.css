@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#f0f0f0;
+    box-sizing: border-box;
+    color: #333;
+    text-align: center;
+}
+.nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:  #5f0033;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+/* */
+.nav-buttons button  ,#start  {
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-size: 16px;
+    color: #5f0033;
+    background-color:#ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#profile{
+    margin-left: 10px;
+    /* padding: 10px 5px; */
+    font-size: 16px;
+    color: white;
+}
+#start{
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+    background-color:  #5f0033;
+    color: #ffffff;
+
+}
+#btn{
+    margin-top: 20px;
+}
+.nav-buttons button:hover  {
+    background-color:#5f0033;
+    color: #ffff;
+}
+#start:hover{
+    background-color: #9a0052;
+}
+
+main {
+    padding: 0px;
+    /* width: 100%; */
+    box-sizing: border-box;
+
+}
+section {
+    /* margin: 20px 0; */
+    width: 100%;
+    box-sizing: border-box;
+
+}
+#home{
+    /* padding: 180px; */
+    /* background-color: #dfdfdf;
+    padding: 270px 0px; */
+    background-color: #fdfdfd;
+    padding: 100px 0px;
+
+}
+#about , #contact{
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px ;
+    background-color:#fdfdfd;
+}
+/* #contact{
+    margin-top: 100px;
+} */
+footer {
+    background-color: #5f0033;
+    color: white;
+    padding: 10px 0;
+    margin-top: -28px ;
+}
+.image{
+    width: 400px;
+    height: 400px;
+    margin-top: -15px;  
+}
+h2{
+    margin-top: 10px;
+    color: #575757;
+}
+
+@media (max-width:500px) {
+    *{
+        font-size: 18px;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    .nav-links li{ 
+        padding: 4px;
+    } 
+    .logo {
+        font-size: 18px;
+      }
+    .nav-links a  {
+        font-size: 14px;
+      }
+    .nav-container{
+        padding: 0% 1%;
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-buttons button{
+        margin: 5px;
+        padding: 5px;
+    }
+    main{
+        padding-top: 15px;
+    }
+    #profile{
+        margin: 5px;
+        font-size: 14px;
+    }
+    #logout{
+        font-size: 14px;
+    }
+    #start{
+        width: 100px;
+        height: 40px;
+        font-size:15px;
+        background-color:  #5f0033;
+        color: #ffffff;
+    }
+    #start{
+        width: 100px;
+        height: 50px;
+        font-size:16px;
+        background-color:  #5f0033;
+        color: #ffffff;
+    }
+    p{
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width:800px) {
+    *{
+        font-size: 18px;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    .nav-links li{ 
+        padding: 4px;
+    } 
+    .logo {
+        font-size: 18px;
+      }
+    .nav-links a  {
+        font-size: 14px;
+      }
+    .nav-container{
+        padding: 0% 1%;
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-buttons button{
+        margin: 5px;
+        padding: 5px;
+    }
+    main{
+        padding-top: 15px;
+    }
+    #profile{
+        margin: 5px;
+        font-size: 14px;
+    }
+    #logout{
+        font-size: 14px;
+    }
+    #start{
+        width: 100px;
+        height: 40px;
+        font-size:15px;
+        margin-top: 20px;
+    }
+    .image{
+        width: 350px;
+        height: 350px;
+        margin-top: 30px;  
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    p{
+        font-size: 13px;
+    }
+    
+}
