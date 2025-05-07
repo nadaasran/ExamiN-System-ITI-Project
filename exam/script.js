@@ -31,15 +31,15 @@ function getQuestions() {
         try {
           let data = JSON.parse(this.responseText);
           questionsArr = data.map(q => new Question(q.id, q.title, q.answers, q.right_answer));
-          shuffleQuestions();
+          shuffleQuestions(); //randomize the questions
           console.log(questionsArr);
-          showQuestion(questionsArr[0]);
+          showQuestion(questionsArr[selectedQuestionIndex]);
           countSpan.innerHTML = "Questions: " + questionsArr.length;
         } catch (error) {
           showError("Failed to parse question data");
         }
       } else {
-        showError("Failed to load questions");
+        showError("Failed to load questions:Invalid JSON format detected");
       }
     }
   };
@@ -50,9 +50,11 @@ function showError(message) {
   loadingMessage.style.color = "red";
 }
 
+// random
 function shuffleQuestions() {
-  for (let i = questionsArr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+  for (let i = 0; i < questionsArr.length; i++) {
+    const j = Math.floor(Math.random() * (questionsArr.length));
+    //array distructuring to swap the elements 
     [questionsArr[i], questionsArr[j]] = [questionsArr[j], questionsArr[i]];
   }
 }
@@ -67,13 +69,16 @@ function showQuestion(question) {
   for (let index = 0; index < question.answers.length; index++) {
     const isChecked =
       selectedAnswers[question.id] === question.answers[index] ? "checked" : ""; // Check if this answer is already selected
+    // name => to group the radio buttons together
+    // id => to link the label with the radio button 
+      
     answersHTML += `
-           <div class="answer">
-        <input type="radio" name="question-${question.id}" onchange="answerQuestion('${question.id}'
-        ,this.value)" id="answer-${question.id}-${index}" value="${question.answers[index]}" ${isChecked}>
-        <label for="answer-${question.id}-${index}">${question.answers[index]}</label>
+      <div class="answer">
+      <input type="radio" name="question-${question.id}" onchange="answerQuestion('${question.id}',this.value)"
+      id="answer-${question.id}-${index}" value="${question.answers[index]}" ${isChecked}>
+      <label for="answer-${question.id}-${index}">${question.answers[index]}</label>
       </div>
-        `;
+      `;
   }
 
   questionContainer.innerHTML = `   
@@ -94,7 +99,7 @@ let answeredQuestionsIds = [];
 
 function answerQuestion(quesId, selectedAnswer) {
   console.log(selectedAnswer);
-  console.log(quesId);
+  console.log(quesId); 
 
   // Save the selected answer in the selectedAnswers object
   selectedAnswers[quesId] = selectedAnswer;
@@ -130,7 +135,7 @@ function goToPreviousQues() {
 function toggleFlag(e) {
   const question = questionsArr[selectedQuestionIndex];
   const index = flagsArr.findIndex((el) => el.id === question.id);
-
+// notempty
   if (index !== -1) {
     flagsArr.splice(index, 1);
     e.innerHTML = `<i class="fa-solid fa-flag"></i>`;

@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Retrieve the email from localStorage (it was saved during login)
     const currentUserEmail = localStorage.getItem('email');
 
-    if (!currentUserEmail) {
-        console.error('No email found in localStorage');
-        return;
-    }
+    // if (!currentUserEmail) {
+    //     console.error('No email found in localStorage');
+    //     return;
+    // }
 
     // Retrieve the users array from localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
@@ -43,7 +43,5 @@ document.querySelector("#btn").addEventListener("click", function () {
     localStorage.removeItem("examCompleted");
     localStorage.removeItem("quizResult");
     localStorage.removeItem("selectedAnswers");
-  
-    // Redirect to the exam page
-    // window.location.href = "../exam/exam.html";
+
   });
